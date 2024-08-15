@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-image: url(/sky-background-.avif);
+            background-size: cover;
+        }
+        .container {
+            
+            border: 2px solid #ccc;
+            padding: 40px;
+            background-color: rgb(161, 213, 245);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            opacity: 75%;
+            width: 300px; /* Adjust as needed */
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4a90e2;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #357ab8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" >
+        
+        <h2>Weather Check</h2>
+        <input  id="city-input"  type="text"  placeholder="Enter your city" />
+        <button  id="search-button"  >
+          Search
+        </button>
+        <h2 id="city-name" ></h2>
+        <h4 id="city-time" ></h4>
+        <p id="city-temp" ></p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
